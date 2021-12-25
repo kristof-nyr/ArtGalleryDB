@@ -9,4 +9,4 @@ Database infrastructure:
 
 DB Installation:
 
-```initializeDB.sql```
+Run the script: ```initializeDB.sql```
