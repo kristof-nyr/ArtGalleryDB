@@ -1,5 +1,10 @@
 CREATE TABLE galleries (
        gallery_id NUMBER,
        gallery_name VARCHAR2(100) NOT NULL,
-       address_id NUMBER NOT NULL
+       address_id NUMBER NOT NULL,
+       mod_user VARCHAR2(300),
+       created_on TIMESTAMP(6),
+       last_mod timestamp(6),
+       dml_flag varchar2(1),
+       version number
 );
