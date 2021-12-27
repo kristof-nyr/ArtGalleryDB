@@ -1,2 +1,3 @@
 Assets/requirements.txt
 Tables/*.~sql
+*.~sql
