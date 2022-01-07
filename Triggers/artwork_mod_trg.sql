@@ -1,10 +1,13 @@
-CREATE OR REPLACE TRIGGER artwork_mod_trg
+﻿CREATE OR REPLACE TRIGGER artwork_mod_trg
   BEFORE INSERT OR UPDATE ON artworks
   FOR EACH ROW
 BEGIN
   IF inserting
   THEN
-    :new.artwork_id := artwork_seq.nextval;
+    IF :new.artwork_id IS NULL
+    THEN
+      :new.artwork_id := artwork_seq.nextval;
+    END IF;
     :new.created_on := SYSDATE;
     :new.dml_flag   := 'I';
     :new.version    := 1;

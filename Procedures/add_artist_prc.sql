@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE add_artist_prc(p_full_name     VARCHAR2
+﻿CREATE OR REPLACE PROCEDURE add_artist_prc(p_full_name     VARCHAR2
                                           ,p_birth_country VARCHAR2
                                           ,p_age           NUMBER
                                           ,p_style         VARCHAR2) IS

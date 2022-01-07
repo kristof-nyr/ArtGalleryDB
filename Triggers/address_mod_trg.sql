@@ -1,10 +1,13 @@
-CREATE OR REPLACE TRIGGER address_mod_trg
+﻿CREATE OR REPLACE TRIGGER address_mod_trg
   BEFORE INSERT OR UPDATE ON address
   FOR EACH ROW
 BEGIN
   IF inserting
   THEN
-    :new.address_id := address_seq.nextval;
+    IF :new.address_id IS NULL
+    THEN
+      :new.address_id := address_seq.nextval;
+    END IF;
     :new.created_on := SYSDATE;
     :new.dml_flag   := 'I';
     :new.version    := 1;

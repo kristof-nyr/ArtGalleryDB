@@ -1,10 +1,13 @@
-CREATE OR REPLACE TRIGGER review_mod_trg
+﻿CREATE OR REPLACE TRIGGER review_mod_trg
   BEFORE INSERT OR UPDATE ON gallery_review
   FOR EACH ROW
 BEGIN
   IF inserting
   THEN
-    :new.review_id := review_seq.nextval;
+    IF :new.review_id IS NULL
+    THEN
+      :new.review_id := review_seq.nextval;
+    END IF;
     :new.created_on := SYSDATE;
     :new.dml_flag   := 'I';
     :new.version    := 1;

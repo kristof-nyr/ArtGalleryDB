@@ -1,10 +1,13 @@
-CREATE OR REPLACE TRIGGER artist_mod_trg
+﻿CREATE OR REPLACE TRIGGER artist_mod_trg
   BEFORE INSERT OR UPDATE ON artists
   FOR EACH ROW
 BEGIN
   IF inserting
   THEN
-    :new.artist_id := artist_seq.nextval;
+    IF :new.artist_id IS NULL
+    THEN
+      :new.artist_id := artist_seq.nextval;
+    END IF;
     :new.created_on := SYSDATE;
     :new.dml_flag   := 'I';
     :new.version    := 1;
