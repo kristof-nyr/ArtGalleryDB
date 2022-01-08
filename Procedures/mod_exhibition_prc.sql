@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE mod_exhibition_prc(p_exhibition_id   NUMBER
+﻿CREATE OR REPLACE PROCEDURE mod_exhibition_prc(p_exhibition_id   NUMBER
                                               ,p_gallery_id      NUMBER
                                               ,p_exhibition_name VARCHAR2
                                               ,p_start_date      DATE
@@ -13,3 +13,4 @@ BEGIN
         ,e.entry_price     = p_entry_price
    WHERE e.exhibition_id = p_exhibition_id;
 END;
+/

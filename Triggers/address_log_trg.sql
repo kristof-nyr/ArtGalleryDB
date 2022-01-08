@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER address_log_trg
+﻿CREATE OR REPLACE TRIGGER address_log_trg
   AFTER INSERT OR UPDATE OR DELETE ON address
   FOR EACH ROW
 DECLARE
@@ -61,3 +61,4 @@ BEGIN
       ,:new.version);
   END IF;
 END;
+/

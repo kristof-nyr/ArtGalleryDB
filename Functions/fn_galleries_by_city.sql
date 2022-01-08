@@ -27,3 +27,5 @@ EXCEPTION
                             p_error_value   => 'p_city: ' || p_city,
                             p_error_cause   => 'function: fn_galleries_by_city');
 END;
+
+/

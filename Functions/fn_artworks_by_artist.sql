@@ -28,3 +28,5 @@ EXCEPTION
                                                p_artist_id,
                             p_error_cause   => 'function: fn_artworks_by_artist');
 END;
+
+/

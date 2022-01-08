@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE add_review_prc(p_gallery_id  NUMBER
+﻿CREATE OR REPLACE PROCEDURE add_review_prc(p_gallery_id  NUMBER
                                           ,p_review_text VARCHAR2
                                           ,p_rating      NUMBER) IS
 BEGIN
@@ -11,3 +11,4 @@ BEGIN
     ,p_review_text
     ,p_rating);
 END;
+/

@@ -12,7 +12,7 @@ PROCEDURE error_log(
           p_error_message VARCHAR2
           ,p_error_value VARCHAR2
           ,p_error_cause VARCHAR2) IS
-PRAGMA autonomous TRANSACTION;
+          PRAGMA AUTONOMOUS_TRANSACTION;
 BEGIN
 INSERT INTO error_log(
        error_id
@@ -27,3 +27,5 @@ INSERT INTO error_log(
        commit;
 END error_log;
 END pkg_error_log;
+
+/

@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER gallery_review_log_trg
+﻿CREATE OR REPLACE TRIGGER gallery_review_log_trg
   AFTER INSERT OR UPDATE OR DELETE ON gallery_review
   FOR EACH ROW
 DECLARE
@@ -52,3 +52,4 @@ BEGIN
       ,:new.version);
   END IF;
 END;
+/

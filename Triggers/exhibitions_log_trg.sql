@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER exhibitions_log_trg
+﻿CREATE OR REPLACE TRIGGER exhibitions_log_trg
   AFTER INSERT OR UPDATE OR DELETE ON exhibitions
   FOR EACH ROW
 DECLARE
@@ -60,3 +60,4 @@ BEGIN
       ,:new.version);
   END IF;
 END;
+/

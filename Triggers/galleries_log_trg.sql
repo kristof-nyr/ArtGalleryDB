@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER galleries_log_trg
+﻿CREATE OR REPLACE TRIGGER galleries_log_trg
   AFTER INSERT OR UPDATE OR DELETE ON galleries
   FOR EACH ROW
 DECLARE
@@ -48,3 +48,4 @@ BEGIN
       ,:new.version);
   END IF;
 END;
+/

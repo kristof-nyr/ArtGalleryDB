@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE mod_artist_prc(p_artist_id     NUMBER
+﻿CREATE OR REPLACE PROCEDURE mod_artist_prc(p_artist_id     NUMBER
                                           ,p_full_name     VARCHAR2
                                           ,p_birth_country VARCHAR2
                                           ,p_age           NUMBER
@@ -11,3 +11,4 @@ BEGIN
         ,ar.style         = p_style
    WHERE ar.artist_id = p_artist_id;
 END;
+/

@@ -6,3 +6,4 @@
 );
 /
 CREATE OR REPLACE TYPE ty_gallery_list IS TABLE OF ty_gallery;
+/

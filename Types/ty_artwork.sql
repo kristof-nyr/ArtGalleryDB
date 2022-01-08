@@ -7,3 +7,4 @@
 );
 /
 CREATE OR REPLACE TYPE ty_artwork_list IS TABLE OF ty_artwork;
+/

@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER artists_log_trg
+﻿CREATE OR REPLACE TRIGGER artists_log_trg
   AFTER INSERT OR UPDATE OR DELETE ON artists
   FOR EACH ROW
 DECLARE
@@ -56,3 +56,4 @@ BEGIN
       ,:new.version);
   END IF;
 END;
+/

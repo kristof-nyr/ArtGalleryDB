@@ -22,3 +22,4 @@ BEGIN
     :new.mod_user := sys_context('USERENV', 'OS_USER');
   END IF;
 END;
+/

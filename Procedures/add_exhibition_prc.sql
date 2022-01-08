@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE add_exhibition_prc(p_gallery_id      NUMBER
+﻿CREATE OR REPLACE PROCEDURE add_exhibition_prc(p_gallery_id      NUMBER
                                               ,p_exhibition_name VARCHAR2
                                               ,p_start_date      DATE
                                               ,p_end_date        DATE
@@ -17,3 +17,4 @@ BEGIN
     ,p_end_date
     ,p_entry_price);
 END;
+/
