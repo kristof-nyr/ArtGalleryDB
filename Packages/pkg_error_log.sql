@@ -1,4 +1,4 @@
-CREATE OR REPLACE PACKAGE pkg_error_log IS
+﻿CREATE OR REPLACE PACKAGE pkg_error_log IS
 
   PROCEDURE error_log(p_error_message VARCHAR2
                      ,p_error_value   VARCHAR2
