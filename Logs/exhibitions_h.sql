@@ -1,4 +1,4 @@
-CREATE TABLE exhibitions_h(
+﻿CREATE TABLE exhibitions_h(
        exhibition_id NUMBER,
        gallery_id NUMBER,
        exhibition_name VARCHAR2(100),
@@ -10,4 +10,4 @@ CREATE TABLE exhibitions_h(
        last_mod timestamp(6),
        dml_flag varchar2(1),
        version number
-)
+);

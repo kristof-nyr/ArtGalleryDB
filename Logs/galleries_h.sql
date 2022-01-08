@@ -1,4 +1,4 @@
-CREATE TABLE galleries_h (
+﻿CREATE TABLE galleries_h (
        gallery_id NUMBER,
        gallery_name VARCHAR2(100),
        address_id NUMBER,

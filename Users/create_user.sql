@@ -1,8 +1,8 @@
-DECLARE
+﻿DECLARE
   CURSOR cur IS
     SELECT 'alter system kill session ''' || sid || ',' || serial# || '''' AS command
       FROM v$session
-     WHERE lower(username) = 'gallery_manager';
+     WHERE username = 'GALLERY_MANAGER';
 BEGIN
   FOR c IN cur
   LOOP
@@ -16,13 +16,13 @@ BEGIN
   SELECT COUNT(*)
     INTO v_count
     FROM dba_users t
-   WHERE lower(t.username) = 'gallery_manager';
+   WHERE t.username = 'GALLERY_MANAGER';
   IF v_count = 1
   THEN
     EXECUTE IMMEDIATE 'DROP USER gallery_manager CASCADE';
   END IF;
 END;
-/ 
+/
 
 CREATE USER gallery_manager identified BY "12345678" DEFAULT tablespace users quota unlimited ON users;
 

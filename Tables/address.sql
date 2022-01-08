@@ -1,4 +1,4 @@
-CREATE TABLE address(
+﻿CREATE TABLE address(
        address_id NUMBER,
        country_code VARCHAR2(3) NOT NULL,
        zip_code NUMBER NOT NULL,

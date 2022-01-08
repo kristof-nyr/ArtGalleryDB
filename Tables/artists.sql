@@ -1,4 +1,4 @@
-CREATE TABLE artists(
+﻿CREATE TABLE artists(
        artist_id NUMBER,
        full_name VARCHAR2(70) NOT NULL,
        birth_country VARCHAR2(50) NOT NULL,

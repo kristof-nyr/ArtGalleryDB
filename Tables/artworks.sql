@@ -1,4 +1,4 @@
-CREATE TABLE artworks(
+﻿CREATE TABLE artworks(
        artwork_id NUMBER,
        artist NUMBER NOT NULL,
        made_in DATE NOT NULL,
@@ -10,4 +10,4 @@ CREATE TABLE artworks(
        last_mod timestamp(6),
        dml_flag varchar2(1),
        version number
-)
+);

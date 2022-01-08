@@ -1,4 +1,4 @@
-CREATE TABLE gallery_review_h(
+﻿CREATE TABLE gallery_review_h(
        review_id NUMBER,
        gallery_id NUMBER,
        review_text VARCHAR2(300),
@@ -9,5 +9,3 @@ CREATE TABLE gallery_review_h(
        dml_flag varchar2(1),
        version number
 );
-
-
