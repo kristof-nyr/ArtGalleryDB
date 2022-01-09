@@ -83,6 +83,12 @@ PROMPT Creating procedures...
 @./Procedures/mod_exhibition_prc.sql
 @./Procedures/mod_gallery_prc.sql
 
+@./Procedures/del_address_prc.sql
+@./Procedures/del_artist_prc.sql
+@./Procedures/del_artwork_prc.sql
+@./Procedures/del_exhibition_prc.sql
+@./Procedures/del_gallery_prc.sql
+
 PROMPT =======================================================================
 PROMPT Creating package...
 
