@@ -33,5 +33,6 @@ grant CREATE sequence TO gallery_manager;
 grant CREATE PROCEDURE TO gallery_manager;
 grant CREATE TYPE TO gallery_manager;
 grant CREATE TRIGGER TO gallery_manager;
+grant CREATE JOB TO gallery_manager;
 
 ALTER session SET current_schema = gallery_manager;

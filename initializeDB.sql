@@ -90,9 +90,23 @@ PROMPT Creating procedures...
 @./Procedures/del_gallery_prc.sql
 
 PROMPT =======================================================================
-PROMPT Creating package...
+PROMPT Creating packages...
 
 @./Packages/pkg_error_log.sql
+@./Packages/pkg_del_addresses.sql
+@./Packages/pkg_del_artists.sql
+@./Packages/pkg_del_artworks.sql
+@./Packages/pkg_del_exhibitions.sql
+@./Packages/pkg_del_galleries.sql
+
+PROMPT =======================================================================
+PROMPT Creating jobs...
+
+@./Jobs/address_deletion_job.sql
+@./Jobs/artist_deletion_job.sql
+@./Jobs/artwork_deletion_job.sql
+@./Jobs/exhibition_deletion_job.sql
+@./Jobs/gallery_deletion_job.sql
 
 PROMPT =======================================================================
 PROMPT Creating Types...
