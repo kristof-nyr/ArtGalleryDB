@@ -5,6 +5,6 @@
                             start_date      => SYSDATE,
                             end_date        => SYSDATE + 60,
                             repeat_interval => 'freq=daily; byhour=23; byminute=40',
-                            comments        => 'This jobs deletes marked addresses at 23:40 each day');
+                            comments        => 'This jobs deletes marked galleries at 23:40 each day');
 END;
 /
